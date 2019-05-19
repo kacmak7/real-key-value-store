@@ -1,2 +1,3 @@
 #!bin/bash
-cc -o functions test.c functions.c
+cc -fPIC -o test test.c functions.c
+cc -fPIC -shared -o functions.so functions.c
